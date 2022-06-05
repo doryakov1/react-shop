@@ -6,7 +6,8 @@ import { useState, useEffect } from 'react';
 import ProductDetails from './Components/ProductDetails';
 import Cart from './Components/Cart';
 function App() {
-  const [loading, setLoading] = useState('')
+  const [loading, setLoading] = useState('');
+  const [totalAmount , setTotalAmount]= useState(0);
   const [cart , setCart] = useState([]);
   const [products, setProducts] = useState([]);
   const [flag, setFlag] = useState(false);
@@ -26,6 +27,10 @@ function App() {
       title:title,
       price:price
     }
+    let sum = totalAmount;
+    sum+=price;
+    setTotalAmount(sum);
+    // console.log(totalAmount);
     setCart([...cart,product]);
   }
 
@@ -45,7 +50,7 @@ function App() {
             return (<Route path={'/react-shop/product'+product.id} element={<ProductDetails title={product.title} image={product.image} price={'$'+product.price}
             category={product.category} description={product.description} addProductToCart={addProductToCart} />} />)
           })};
-          <Route path='/react-shop/cart' element={<Cart cart={cart}  removeProductFromCart={removeProductFromCart}/>}/>
+          <Route path='/react-shop/cart' element={<Cart cart={cart}  removeProductFromCart={removeProductFromCart} totalAmount={totalAmount} setTotalAmount={setTotalAmount}/>}/>
         </Routes>
       </BrowserRouter>
     </div>

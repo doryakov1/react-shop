@@ -17,8 +17,8 @@ export default function Product(props) {
         }
     }
     const sliceDescription =(descriptio)=>{
-        if(descriptio.length > 40){
-            return descriptio.slice(0 , 40)+'...'
+        if(descriptio.length > 30){
+            return descriptio.slice(0 , 30)+'...'
         }else{
             return descriptio
         }
