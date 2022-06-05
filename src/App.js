@@ -14,7 +14,8 @@ function App() {
     setLoading(<span class="loader"></span>);
     fetch('https://fakestoreapi.com/products')
       .then(res => res.json())
-      .then(data => { setProducts(data);setLoading('')})
+      .then(data => { setProducts(data)})
+      .then(()=>{setLoading('')})
     // .then(json=>console.log(json))
     // console.log(products)
   }, [flag]);

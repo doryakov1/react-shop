@@ -2,16 +2,16 @@ import React from 'react'
 import './Product.css'
 export default function Product(props) {
     const sliceTitle =(title)=>{
-        if(title.length > 20){
-            return title.slice(0 , 20)+'...'
+        if(title.length > 15){
+            return title.slice(0 , 15)+'...'
         }else{
             return title
         }
     }
 
     const sliceCategory=(category)=>{
-        if(category.length > 20){
-            return category.slice(0 , 20)+'...'
+        if(category.length > 15){
+            return category.slice(0 , 15)+'...'
         }else{
             return category
         }
