@@ -1,0 +1,26 @@
+.home-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+}
+
+.home-page .link{
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.705)
+}
+
+ 
+.home-page div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 25px;
+}

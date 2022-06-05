@@ -1,0 +1,53 @@
+.menu{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    background: black;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.menu .link{
+    text-decoration: none;
+}
+
+.menu div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  0 10px;
+}
+.menu div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    height: 37px;
+    cursor: pointer;
+     margin: 0;
+
+}
+
+.menu div input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0;
+    height: 35px;
+    padding: 0;
+}
+
+
+.menu div .cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  background: rgb(255, 217, 0);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
