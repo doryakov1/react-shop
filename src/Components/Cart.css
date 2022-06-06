@@ -6,3 +6,10 @@
     margin: 15px;
     padding: 15px;
 }
+
+
+.cart button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

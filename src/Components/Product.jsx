@@ -28,7 +28,7 @@ export default function Product(props) {
         {props.loading}
          <h4>{sliceTitle(props.title)}</h4>
          <img src={props.image} alt="img" />
-         <span>{props.price}</span>
+         <span>{'$'+props.price}</span>
          <div>
          <span>{sliceCategory(props.category)}</span>
          <span>{sliceDescription(props.description)}</span>

@@ -6,7 +6,7 @@ export default function ProductDetails(props) {
             <div className='product-img'>
             <h4>{props.title}</h4>
                 <img src={props.image} alt="img" />
-                <span>{props.price}</span>
+                <span>{'$'+props.price}</span>
             </div>
             <div className='product-content'>
                 <span>{props.category}, {props.description}</span>

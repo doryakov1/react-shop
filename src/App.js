@@ -47,10 +47,10 @@ function App() {
         <Routes>
           <Route path='/react-shop' element={<HomePage products={products} addProductToCart={addProductToCart} loading={loading} />} />
           {products.map((product)=>{
-            return (<Route path={'/react-shop/product'+product.id} element={<ProductDetails title={product.title} image={product.image} price={'$'+product.price}
+            return (<Route path={'/react-shop/product'+product.id} element={<ProductDetails title={product.title} image={product.image} price={product.price}
             category={product.category} description={product.description} addProductToCart={addProductToCart} />} />)
           })};
-          <Route path='/react-shop/cart' element={<Cart cart={cart}  removeProductFromCart={removeProductFromCart} totalAmount={totalAmount} setTotalAmount={setTotalAmount}/>}/>
+          <Route path='/react-shop/cart' element={<Cart cart={cart} setCart={setCart}  removeProductFromCart={removeProductFromCart} totalAmount={totalAmount} setTotalAmount={setTotalAmount}/>}/>
         </Routes>
       </BrowserRouter>
     </div>
