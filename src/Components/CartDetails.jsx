@@ -14,7 +14,7 @@ export default function CartDetails(props) {
       <img src={props.image} alt="img" />
       <span>{sliceTitle(props.title)}</span>
       <span>{'$'+props.price}</span>
-      <button onClick={()=>{props.removeProductFromCart(props.idx)}}>X</button>
+      <button onClick={()=>{props.removeProductFromCart(props.idx , props.price)}}>X</button>
     </div>
   )
 }

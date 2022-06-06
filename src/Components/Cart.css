@@ -6,10 +6,23 @@
     margin: 15px;
     padding: 15px;
 }
-
-
-.cart button{
+.cart label{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+    padding: 20px;   
+    font-weight: bold;
+}
+
+
+.cart .buy-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+    font-weight: bold;
+    background: rgb(255, 247, 0);
+    border: none;
 }

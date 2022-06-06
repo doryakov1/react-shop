@@ -14,7 +14,7 @@ export default function Cart(props) {
       return <CartDetails image ={product.image } title ={product.title } price ={product.price } idx={idx}  removeProductFromCart={props.removeProductFromCart}/>
     })}
     <label For="buy">Total: ${props.totalAmount}</label>
-        <button name='buy' onClick={onBuy}>Buy</button>
+        <button className='buy-btn' name='buy' onClick={onBuy}>Buy</button>
     </div>
   )
 }
