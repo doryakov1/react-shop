@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 export default function HomePage(props) {
   return (
     <div className='home-page'>
+      {props.loading}
         {props.products.map((product)=>{
             return (<div>
               <Link className='link' to={'/react-shop/product'+product.id}><Product title={product.title} image={product.image} price={product.price}
