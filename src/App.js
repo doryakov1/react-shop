@@ -37,6 +37,9 @@ function App() {
   const removeProductFromCart = (idx ,price)=>{
     let sum = totalAmount;
     sum-=price;
+    if(cart.length-1 == 0){
+      sum=0;
+        }
     setTotalAmount(sum);
     let copyCart=[...cart];
     copyCart.splice(idx,1);
